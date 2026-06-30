@@ -15,9 +15,9 @@
 
 # ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⋆⁺★₊⋆₊✦₊⋆★₊⁺⋆
 
-![Win32](https://github.com/SunnexGB/My-assets/blob/main/win32.png?raw=true)
+[![Win32](https://github.com/SunnexGB/My-assets/blob/main/win32.png?raw=true)](https://github.com/SunnexGB/BrawlhallaPingOverlay/releases/download/v1.0.0-beta/BrawlhallaPingOverlay-32bit.exe)
 
-![Win64](https://github.com/SunnexGB/My-assets/blob/main/win64.png?raw=true)
+[![Win64](https://github.com/SunnexGB/My-assets/blob/main/win64.png?raw=true)](https://github.com/SunnexGB/BrawlhallaPingOverlay/releases/download/v1.0.0-beta/BrawlhallaPingOverlay-64bit.exe)
 
 # ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⋆⁺★₊⋆₊✦₊⋆★₊⁺⋆
 
