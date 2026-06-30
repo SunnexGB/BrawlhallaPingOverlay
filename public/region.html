@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/regions.css">
+    <title>Select Region</title>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="../src\background\bg_maki.mp4" type="video/mp4">
+    </video>
+    <div class="glass"></div>
+    <div class="content">
+        <div class="title">Select Ping Region</div>
+        <div class="help-menu">
+            <button id="help-open" class="help-open-btn">?</button>
+        </div>
+        <div class="regions-menu" id="regions-menu">
+            <div class="select-region-btn">
+                <div class="regions-name-btn">Regions</div>
+                <img class="regions-icon" src="../src/svg/select_orb.svg" alt="open region list">
+            </div>
+        </div>
+        <select id="region-select"></select>
+        <button id="apply-btn">Apply</button>
+    </div>
+    <div id="help-shortcuts-menu">
+        <div class="help-shortcuts-panel">
+            <div class="help-shortcuts-header">
+                <div>Shortcuts</div>
+                <button id="help-close" class="help-shortcuts-close">OK</button>
+            </div>
+            <div class="help-shortcuts-win">
+                <div class="help-shortcuts-tittle">- Open region menu: <b>Ctrl+Shift+P</b></div>
+                <div class="help-shortcuts-tittle">- Toggle overlay drag: <b>Ctrl+Shift+M</b></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main-menu.js"></script>
+</body>
+</html>

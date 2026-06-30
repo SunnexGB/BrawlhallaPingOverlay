@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Monocraft";
+    src: url("../fonts/Monocraft.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Monocraft', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.glass {
+    box-sizing: border-box;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+    background: linear-gradient(0deg, rgba(255,255,255,0.08), rgba(255,255,255,0.08));
+    border: 2px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(2.5px);
+    z-index: 0;
+    -webkit-app-region: drag;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 0px rgba(0,0,0,0.25);
+}
+
+.regions-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    -webkit-app-region: no-drag;
+}
+
+.select-region-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.regions-name-btn {
+    font-size: 12px;
+    text-shadow: 0px 2px 0px rgba(0,0,0,0.25);
+}
+
+.regions-icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+select {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Monocraft', monospace;
+    -webkit-app-region: no-drag;
+}
+
+button:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+#help-shortcuts-menu {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.help-shortcuts-panel {
+    width: 250px;
+    max-width: 92vw;
+    padding: 16px;
+    border-radius: 14px;
+    background: linear-gradient(0deg, rgba(255,255,255,0.04), rgba(255,255,255,0.04));
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(4px);
+    color: white;
+    font-family: 'Monocraft', monospace;
+}
+
+.help-shortcuts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.help-shortcuts-close {
+    -webkit-app-region: no-drag;
+    padding: 6px 8px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: white;
+    cursor: pointer;
+}
+
+.help-shortcuts-win {
+    font-size: 14px;
+    text-align: left;
+}
+
+.help-shortcuts-tittle {
+    margin: 6px 0;
+}
+
+.help-menu {
+    position: absolute;
+    right: calc(44%);
+    top: calc(107%);
+    z-index: 2;
+    -webkit-app-region: no-drag;
+}
+
+.help-open-btn {
+    padding: 6px 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: white;
+    cursor: pointer;
+    font-family: 'Monocraft', monospace;
+}
